@@ -6,6 +6,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="./styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Offside&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9a98468feb.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
@@ -46,7 +47,7 @@
         </div>
         <div class="text-block">
           <h2>More about our park</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nostrum magnam laborum, repellat explicabo dignissimos harum adipisci, in facilis tempora sed voluptate, nesciunt quod! Dolor nemo velit alias dolorum voluptate, deserunt voluptatum voluptates in aperiam ut provident quos necessitatibus exercitationem soluta id harum dolorem, commodi totam ad magnam reiciendis? Possimus beatae aut velit vitae fuga dolorem? Expedita cumque voluptate perspiciatis adipisci libero incidunt vero tempore laudantium ex corrupti iure esse, quisquam mollitia, blanditiis, veritatis ullam.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione rerum laboriosam, tempore repellendus, fugiat quibusdam nobis voluptas molestias maiores nemo debitis exercitationem nulla nostrum reprehenderit tenetur dolores at omnis. Fugit quaerat maiores, a consectetur esse fuga! Aperiam accusantium ut pariatur odit minima a magnam numquam nihil, voluptatibus, facere maxime ipsa!</p>
           <a href="#" class="read-more">Read more</a>
         </div>
       </div>
@@ -62,8 +63,9 @@
       <div class="wrapper">
         <div class="text-block block-1">
           <h2>Bobby and Bella</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae necessitatibus molestiae doloribus mollitia similique totam unde veniam ullam quasi deleniti recusandae sit numquam corporis, aspernatur blanditiis assumenda id dignissimos. Aspernatur alias odio consectetur debitis obcaecati.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quasi provident porro voluptatum, dignissimos voluptate fugiat quia ut sit repellat minima quaerat voluptas laboriosam illo ea fugit est numquam voluptatibus recusandae nobis dolore error nam doloremque nesciunt. Quibusdam, explicabo sed!</p>
           <a href="#" class="read-more">Read more</a>
+          
         </div>
       </div>
 
@@ -78,7 +80,7 @@
       <div class="wrapper">
         <div class="text-block block-2">
           <h2>Look at Marco now</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iste provident ut amet voluptatibus, iusto recusandae? Nobis enim a quis animi placeat deleniti deserunt officiis, sint culpa repellendus veritatis consequuntur.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quis rerum, necessitatibus reprehenderit accusamus dolores, aliquam quidem praesentium nobis, officiis porro distinctio molestiae. Dolor quas quibusdam officia sed molestias excepturi, harum delectus consectetur ab nemo explicabo ipsam laborum eveniet libero.</p>
           <a href="#" class="read-more">Read more</a>
         </div>
       </div>
@@ -88,26 +90,36 @@
   </section>
 
   <section class="section-three">
-    <ul class="wrapper">
-      <li class="donate"><a href="#">Donations</a></li>
-      <li class="jobs"><a href="#">Jobs</a></li>
-      <li class="events"><a href="#">Events</a></li>
+    <ul class="wrapper clearfix">
+      <li class="donate">
+        <span class="icon"><i class="fas fa-gift"></i></span>
+        <a href="#">Donations</a></li>
+      <li class="jobs">
+        <span class="icon"><i class="fas fa-briefcase"></i></span>
+        <a href="#">Jobs</a>
+      </li>
+      <li class="events">
+        <span class="icon"><i class="fas fa-calendar-check"></i></span>
+        <a href="#">Events</a>
+      </li>
     </ul>
   </section>
 
   <footer>
 
-    <div class="wrapper">
+    <div class="wrapper clearfix">
       <div class="newsletter-sub">
         <h3>Stay updated</h3>
         <p>Subscribe to our newsletter to stay updated</p>
-        <form action="">
+        <form action="" class="form-subscribe">
           <input type="email" name="email" id="email-input" placeholder="email address">
           <button>Subscribe</button>
         </form>
       </div>
-  
+      
+      <!-- TODO: change to address -->
       <div class="contact">
+        <h3>Contact</h3>
         <p>info@email.com 123-456-7890 123 some road, toronto ON, A5A 5A5 canada</p>
       </div>
   
@@ -119,10 +131,12 @@
           <li><a href="">Contact</a></li>
         </ul>
       </nav>
-  
-      <div class="copyright">
-        <p>Copyright &copy; 2019 Juno College</p>
-      </div>
+      
+
+    </div>
+    
+    <div class="copyright">
+      <p>Copyright &copy; 2019 Juno College</p>
     </div>
   </footer>
 
