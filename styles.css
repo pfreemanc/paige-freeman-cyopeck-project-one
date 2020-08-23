@@ -59,18 +59,26 @@ h3 {
   margin: 0;
 }
 
+button {
+  font-family: 'Offside', cursive;
+  font-size: 2rem;
+  border: none;
+  text-transform: uppercase;
+}
+
 .wrapper {
-  max-width: 1200px;
+  max-width: 1280px;
   width: 90%;
   margin: 0 auto;
 }
 
 
 header {
-  height: 90vh;
+  height: 100vh;
   background-image: url(./assets/header-image.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   color: white;
 }
 
@@ -160,8 +168,11 @@ h1 {
 .read-more {
   display: inline-block; 
   border: 1px solid black;
+  background-color: #ffffff;
+  color: #116500;
   font-family: 'Offside', cursive;
   font-size: 2rem;
+  text-transform: uppercase;
   padding: 10px;
   margin-top: 10px;
 }
@@ -172,27 +183,37 @@ h1 {
 }
 
 .section-two .text-block,
-.image-block {
+.section-two .image-block {
   width: 50%;
+}
+
+.first-line .text-block,
+.first-line .image-block {
+  float: right
+}
+
+.second-line .text-block,
+.second-line .image-block {
   float: left;
 }
 
+
 .section-two .text-block {
-  padding: 75px 0;
-  width: calc(50% - 40px);
+  padding-top: 100px;
+  width: calc(50% - 50px);
   color: white;
 }
-
 .section-two .text-block h2 {
-  padding-bottom: 20px;
+  padding: 0;
 }
 
 .section-two .block-1{
-  margin-right: 40px;
+  margin-right: 50px;
+  float: right;
 }
 
 .section-two .block-2 {
-  margin-left: 40px;
+  margin-left: 50px;
 }
 
 
@@ -258,11 +279,7 @@ footer h3 {
 .form-subscribe button {
   padding: 15px 20px;
   background-color: #2C2D2C;
-  border: none;
-  font-family: 'Offside', cursive;
   color: white;
-  text-transform: uppercase;
-  font-size: 2rem;
   float: left;
 }
 
@@ -300,4 +317,63 @@ footer p {
   margin: 0;
 }
 
-@media (min-width:)
+@media (max-width: 1220px) {
+
+  .section-two .read-more {
+    margin: 0;
+  }
+  
+  .section-two .text-block {
+    padding-top: 50px;
+  }
+
+  .section-two h2 {
+    font-size: 3rem;
+  }
+
+  .section-two p {
+    font-size: 1.6rem;
+  }
+
+
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 980px) {
+
+  .section-two .text-block,
+  .section-two .image-block {
+    float: none;
+    width: 100%;
+  }
+
+  .section-two .text-block {
+    margin: 0;
+    padding: 100px 0;
+  }
+
+  .section-two h2 {
+    text-align: center;
+  }
+
+  .section-two .read-more {
+    display: block;
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+
+  
+
+
+  
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}
