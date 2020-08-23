@@ -27,6 +27,12 @@ html {
 }
 
 
+/* TODO: REMOVE */
+* {
+  /* border: 1px solid red; */
+}
+
+
 img {
   width: 100%;
 }
@@ -91,7 +97,9 @@ h1 {
 
 .logo {
   font-size: 2rem;
+  font-family: 'Offside', cursive;
   line-height: 20px;
+  width: 20%;
 }
 
 .top-page p {
@@ -167,9 +175,9 @@ h1 {
 
 .read-more {
   display: inline-block; 
-  border: 1px solid black;
-  background-color: #ffffff;
-  color: #116500;
+  border: none;
+  background-color: #116500;
+  color: #fff;
   font-family: 'Offside', cursive;
   font-size: 2rem;
   text-transform: uppercase;
@@ -180,6 +188,11 @@ h1 {
 
 .section-two {
   background-color: #213C28;
+}
+
+.section-two .read-more {
+  background-color: #fff;
+  color: #116500;
 }
 
 .section-two .text-block,
@@ -298,6 +311,7 @@ footer p {
   font-family: "Offside", cursive;
   text-transform: lowercase;
   text-align: right;
+  line-height: 26px;
 }
 
 .bottom-nav a {
@@ -335,7 +349,6 @@ footer p {
     font-size: 1.6rem;
   }
 
-
 }
 
 /* Portrait tablet and small desktops */
@@ -362,18 +375,187 @@ footer p {
     margin: 0 auto;
     text-align: center;
   }
-
-
-  
-
-
   
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+  
+  header {
+    height: 50vh;
+  }
+
+  h1 {
+    width: 70%;
+  }
+  .section-one {
+    padding: 50px 0;
+  }
+
+  .top-nav ul{
+    display: none;
+  }
+
+  .read-more,
+  .section-two .read-more {
+    margin: 20px auto 0;
+  }
+
+  .top-nav::before {
+    display: inline-block;
+    font-family: "FontAwesome";
+    content: "\F0C9";
+    font-size: 2.6rem;
+    margin: 20px 0;
+  }
+  
+  .read-more,
+  .section-two .read-more {
+    display: block;
+    text-align: center;
+    width: 50%;
+    margin: 40px auto;
+  }
+
+  .three-images {
+    margin: 0;
+  }
+
+
+  .three-images li {
+    width: calc((100% - 20px) / 2);
+    margin: 0;
+  }
+
+
+  .three-images  li:first-child {
+    margin-right: 20px;
+  }
+
+  .three-images li:last-child {
+    width: 100%;
+    margin-top: 40px;
+  } 
+
+  .section-one {
+    padding-bottom: 50px;
+  }
+
+  .section-one h2 {
+    padding: 40px 0;
+    margin: 0;
+  }
+
+  .more-info .image-container {
+    display: none;
+  }
+
+  .more-info .text-block {
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
+
+  .more-info h2 {
+    padding: 20px 0;
+  }
+
+  .section-two .text-block {
+    padding: 50px 0;
+  }
+
+  /* footer styles */
+
+  .newsletter-sub h3 {
+    text-align: center;
+  }
+  
+
+  .contact,
+  .bottom-nav,
+  .newsletter-sub {
+    padding: 10px 0;
+  }
+
+  .bottom-nav,
+  .contact {
+    padding-bottom: 40px;
+  }
+
+  .newsletter-sub {
+    padding-top: 40px;
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .form-subscribe input,
+  .form-subscribe button {
+    width: 100%;
+    float: none;
+  }
+
+  .form-subscribe button {
+    width: 60%;
+    margin: 10px 0;
+  }
+
+  .form-subscribe input {
+    text-align: center;
+  }
+
+  .contact {
+    width: 60%;
+  }
+
+  .bottom-nav {
+    width: 40%;
+  }
+
+
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+
+  /* I struggled with getting the header image to align properly. Please let me know what you would suggest in this case. Thank you */
+  h1 {
+    width: 80%;
+    font-size: 4rem;
+    line-height: 4rem;
+    margin: 20px 0;
+  }
+
+  p {
+    font-size: 1.6rem;
+    line-height: 26px;
+  }
+
+  
+
+  .section-one {
+    padding: 0 0 50px;
+  }
+  
+  .section-one h2,
+  .section-two h2 {
+    font-size: 2.4rem;
+  }
+
+  .section-two .text-block {
+    padding: 40px 0;
+  }
+
+  /* section 3 */
+
+  .section-three {
+    padding: 50px 0;
+  }
+
+  .section-three ul li {
+    float: none;
+    width: 100%;
+    padding: 20px 0;
+  }
+
 }
