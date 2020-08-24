@@ -111,7 +111,7 @@ h1 {
   font-size: 2rem;
   font-family: 'Offside', cursive;
   line-height: 20px;
-  width: 20%;
+  width: 10%;
 }
 
 .top-page p {
@@ -346,17 +346,22 @@ address a {
 .copyright {
   background-color: #2C2D2C;
   text-align: center;
+  padding: 5px 0;
 }
 
 .copyright p {
   margin: 0;
 }
 
+.copyright a{
+  color: white;
+  text-decoration: underline;
+}
+
 /* hover states */
 
-button:hover,
-.read-more:hover,
-.top-nav a:hover {
+a:hover,
+button:hover {
   font-weight: bold;
 }
 
